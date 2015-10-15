@@ -12,7 +12,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	 vb.cpus = 2
   end
 
-  config.vm.network "private_network", ip: "192.168.33.11"
+  config.vm.network "private_network", ip: "192.168.33.10"
 
   config.vm.synced_folder "./magento", "/var/www/html/magento/"
   
