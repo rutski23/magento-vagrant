@@ -120,6 +120,14 @@ echo "############################"
 echo "xdebug.remote_enable = 1" >> /etc/php5/apache2/php.ini
 echo "xdebug.remote_connect_back = 1" >> /etc/php5/apache2/php.ini
 
+# Install Magerun
+echo "###########################"
+echo "##### INSTALL MAGERUN #####"
+echo "###########################"
+wget http://files.magerun.net/n98-magerun-latest.phar -O n98-magerun.phar
+chmod +x ./n98-magerun.phar
+mv ./n98-magerun.phar /usr/local/bin/magerun
+
 # Restart apache
 echo "#############################"
 echo "##### RESTARTING APACHE #####"
